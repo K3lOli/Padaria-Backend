@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:Padaria-backend}/src/controllers/user.db",
+            "name": "connection"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
