@@ -21,8 +21,10 @@ createTables();
 export class UserController {
     static async cadastrar(req: FastifyRequest, res: FastifyReply) {
         try {
-            const body = req.body as User;
-            const {email, nome} = body;
+            const body = req.body as User[];
+            const {email, nome} = body[0];
+
+            console.log("usuario:", body[0]);
 
             const existingUser = await new Promise((resolve, reject) => {
                 db.get(`SELECT * FROM usuarios WHERE email = ?`, [email], (err, row) => {

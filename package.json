@@ -20,6 +20,7 @@
     "@fastify/cors": "^8.4.1",
     "fastify-cors": "^6.1.0",
     "moongose": "^1.0.0",
+    "mysql2": "^3.6.5",
     "sqlite3": "^5.1.6"
   }
 }
